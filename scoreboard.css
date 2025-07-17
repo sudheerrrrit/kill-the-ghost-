@@ -1,0 +1,40 @@
+#scoreboard{
+    display: none;
+    border: solid 0.3rem white;
+    font-size: 7vmin;
+    width: 65%;
+    height: 65%;
+
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#scoreboard #title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#scoreboard ol{
+    font-size: 5vmin;
+    padding: 0;
+}
+#top1{color: gold}
+#top2{color: silver}
+#top3{color: #CD7F32}
+
+
+.returnmenu{
+    text-align: center;
+    font-size: 5.5vmin
+}
+.returnmenu:hover{
+    color: rebeccapurple;
+}
+
+
+@media screen and (max-width: 800px){
+    #scoreboard ol{
+        font-size: 3.2vmin;
+    }
+}
