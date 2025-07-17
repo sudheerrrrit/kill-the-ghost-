@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kill the Ghost!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="game.css">
+    <link rel='icon' href='favicon.ico'>
+    <link href='scoreboard.css' type='text/css' media='screen' rel='stylesheet'>
+</head>
+<body>
+    <div id='viewport'>
+        <div id='screen'>
+            <div id='nicknamescreen'>
+                Your Nickname:<input type='text' id='nickname'>
+                <button type='button' onclick='loadMenu()'>Play</button>
+            </div>
+
+            <div id='menu'>
+                <ul>
+                    <li onclick='start();'>Start Game!</li>
+                    <li onclick='showScoreboard();'>Show Scoreboard</li>
+                    <li onclick='showHelp();'>Help</li>
+                </ul>
+            </div>
+            <div id='timeleft'>1:00</div>
+            <div id='score'>Score: 0</div>
+
+            <img src='pink_ghost.png' id='ghost' onmouseover='scoreIt();'>
+
+            <div id='finalscore'>
+                <div id='yourscore'></div>
+                <div id='showscoreboard' onclick='showScoreboard()'>Show Scoreboard</div>
+            </div>
+            
+            <div id='scoreboard'>
+                <div id='title'>HIGH SCORES</div>
+                <ol>
+                    <li id='top1'></li>
+                    <li id='top2'></li>
+                    <li id='top3'></li>
+                </ol>
+                <div class='returnMenu' onclick='returnToMenu()'>Return to the Menu</div>
+            </div>
+
+
+            <div id='helpmenu'>
+                <div id='helptext'>How to play the game:
+                You need to touch the ghost with your mouse in order to score.
+                You do not have to click the ghost to score it! - Just hover the mouse over the ghost! 
+                Try to score the most and have fun!
+                </div>
+                <div class='returnMenu' onclick='returnToMenu()'>Return to the Menu</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src='scoreboard.js'></script>
+    <script src="game.js"></script>
+</body>
+</html>
