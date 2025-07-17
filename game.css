@@ -1,0 +1,149 @@
+@font-face{
+    src: url('font/slkscr.ttf');
+    font-family: bitstyle;
+}
+body{
+    background: url('night_sky.jpg') center/cover no-repeat;
+    font-family: bitstyle;
+    color: white; 
+    margin: 0;
+}
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+#viewport{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ghost{
+    display: none;
+    height: 5vmin;
+    width: 5vmin;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#screen{
+    position: relative;
+    background: #000;
+    width: 80vw;
+    height: 80vh;
+    border: 0.7rem solid blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#screen:hover{
+    cursor: crosshair;
+}
+
+#nicknamescreen{
+    font-size: 6vmin;
+}
+#nicknamescreen input{
+    display: block;
+    margin: 10% auto 0;
+    font-size: 3vmin;
+    font-family: bitstyle;
+}
+#nicknamescreen button{
+    -webkit-appearance: none;
+    background-color: white;
+    font-size: 4vmin;
+    font-family: bitstyle;
+    margin: 10% auto 0;
+    display: block;
+    border: none;
+    border-radius: 2px;
+}
+#nicknamescreen button:hover{
+    background-color: purple;
+    color: white;
+    cursor: crosshair;
+}
+
+#menu{
+    display: none;
+    text-align: center;
+    border: solid 0.3rem white;
+    font-size: 6vmin;
+    width: 65%;
+    height: 65%;
+}
+#menu ul{
+    margin: 0;
+    padding: 7% 5%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5%;
+    justify-items: center;
+    align-items: center;
+}
+#menu ul li{
+    list-style-type: none;
+}
+#menu ul li:hover{
+    color: gold;
+}
+
+#timeleft{
+    display: none;
+    align-self: flex-start;
+    font-size: 4vmin;
+    margin: .7rem;
+    padding: .2rem;
+    border: .1em white solid;
+}
+
+#score{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: .7rem;
+    transform: translateX(-100%);   
+    font-size: 5vmin;
+    white-space: nowrap;
+}
+
+#finalscore{
+    display: none;
+    text-align: center;
+    font-size: 6vmin;
+    opacity: 0;
+    transition: opacity 3s;
+}
+#finalscore #yourscore{
+    font-size: 8vmin;
+}
+#finalscore #showscoreboard{
+    margin-top: 20%;
+}
+#showscoreboard:hover{
+    color: rebeccapurple;
+}
+
+
+
+#helpmenu{
+    word-wrap: break-word;
+    display: none;
+    text-align: justify;
+    border: solid 0.3rem white;
+    font-size: 3.2vmin;
+    width: 65%;
+    height: 65%;
+    padding: 4%;
+
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10%;
+
+}
