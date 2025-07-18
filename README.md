@@ -12,7 +12,7 @@ Responsive controls: Mouse hover to kill ghosts
 
 Visual & audio feedback: Level-up effects and sounds on hit or miss
 
-Play here : https://github.com/sudheerrrrit/kill-the-ghost-   
+Play here : https://github.com/sudheerrrrit/kill-the-ghost-/
 
 Demo
 
